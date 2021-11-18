@@ -221,7 +221,7 @@
       * Systems are implemented as tables that contain at least one method (`update(dt)`); 
       * 
       */
-     interface System
+     interface System extends LuaTable
      {
          filter: Filter;
          update: (dt: number) => void;
